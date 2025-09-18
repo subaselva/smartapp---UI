@@ -4,8 +4,8 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 # Restaurant Table Booking (Angular)
 
-Short demo app that shows a restaurant table booking flow (Angular + example backend).  
-This README includes step-by-step screenshots for the booking flow.
+Short demo app that shows a restaurant table booking flow Angular .  
+Step-by-step screenshots for the booking flow.
 
 ---
 
