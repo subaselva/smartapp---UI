@@ -1,0 +1,22 @@
+#book-a-table1 {
+  padding: 100px 0;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.reservation-form-bg {
+  padding: 20px;
+  align-items: flex-start !important; /* ensure full content shows */
+}
+.reservation-img {
+  background-size: contain;   /* show entire image */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;          /* ensure enough height */
+}

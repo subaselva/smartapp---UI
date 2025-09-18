@@ -1,0 +1,72 @@
+.about {
+  position: relative;
+  padding: 80px 0;
+  text-align: center; /* Center all content */
+}
+
+.about .about-img {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about h3 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: var(--font-secondary);
+  color: #000; /* Black heading */
+}
+
+.about .content p {
+  font-size: 18px;
+  color: #333; /* Dark gray text */
+  margin-bottom: 20px;
+}
+.about .call-us {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  background-color: #fff; /* White background */
+  box-shadow: 0px 2px 25px rgba(0,0,0,0.08);
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.about .call-us h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: var(--font-default);
+  color: #000; /* Black heading */
+}
+
+.about .call-us p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary); /* Primary accent color */
+  margin: 0;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block; /* Center list */
+  text-align: left;
+}
+
+.about .content ul li {
+  padding-left: 30px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: var(--color-primary); /* Primary color for icons */
+}

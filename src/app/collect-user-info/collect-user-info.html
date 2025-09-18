@@ -1,0 +1,90 @@
+<!-- ======= Book A Table Section ======= -->
+<section id="book-a-table11" class="book-a-table">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2>Reserving for {{ selectedTable.tableName }} Table</h2>
+      <p>Tell us <span>Your details</span> Just a little</p>
+    </div>
+
+    <div class="row col-md-12 col-lg-12">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()" autocomplete="off">
+        
+        <!-- First Name -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="firstName"
+            formControlName="firstName"
+            placeholder="First Name"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div *ngIf="userForm.get('firstName')?.touched && userForm.get('firstName')?.invalid" class="text-danger">
+            First name is required
+          </div>
+        </div>
+        <br />
+
+        <!-- Last Name -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="lastName"
+            formControlName="lastName"
+            placeholder="Last Name"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div *ngIf="userForm.get('lastName')?.touched && userForm.get('lastName')?.invalid" class="text-danger">
+            Last name is required
+          </div>
+        </div>
+        <br />
+
+        <!-- Email -->
+        <div class="form-group">
+          <input
+            type="email"
+            id="emailId"
+            formControlName="emailId"
+            placeholder="Email Id"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div *ngIf="userForm.get('emailId')?.touched && userForm.get('emailId')?.errors?.['required']" class="text-danger">
+            Email is required
+          </div>
+          <div *ngIf="userForm.get('emailId')?.touched && userForm.get('emailId')?.errors?.['email']" class="text-danger">
+            Enter a valid email
+          </div>
+        </div>
+        <br />
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="phoneNumber"
+            formControlName="phoneNumber"
+            placeholder="Phone Number"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div *ngIf="userForm.get('phoneNumber')?.touched && userForm.get('phoneNumber')?.errors?.['required']" class="text-danger">
+            Phone number is required
+          </div>
+          <div *ngIf="userForm.get('phoneNumber')?.touched && userForm.get('phoneNumber')?.errors?.['pattern']" class="text-danger">
+            Phone number must be 10 digits
+          </div>
+        </div>
+        <br />
+
+        <!-- Submit -->
+        <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- End Book A Table Section -->

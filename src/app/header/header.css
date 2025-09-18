@@ -1,0 +1,96 @@
+/* Header Container */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #d9eae4;       /* White background */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  padding: 0 30px;
+  border-bottom: 1px solid #eee; /* Subtle bottom border */
+  transition: all 0.5s;
+}
+
+.header.sticked {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Shadow on scroll */
+}
+
+@media (max-width: 575px) {
+  .header {
+    height: 70px;
+    padding: 0 15px;
+  }
+}
+.header .logo img {
+  max-height: 60px;
+  display: block;
+}
+
+.header .logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+.header .logo h1 span img {
+  max-height: 50px; /* Adjust logo size inside span */
+}
+/* Navbar container */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+.navbar ul li a {
+  color: #000;             /* Black text */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.router-link-active {
+  color: var(--color-primary); /* Highlight on hover or active */
+
+}
+.btn-book-a-table {
+  font-size: 14px;
+  color: brown;                     /* White text */
+  background: var(--color-primary);/* Primary color */
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-book-a-table:hover {
+  background: rgba(206,18,18,0.8);
+  color: #fff;
+}
+/* Normal nav links */
+#navbar ul li a {
+  color: #141111; /* default color */
+  transition: 0.3s;
+}
+
+/* Hover effect */
+#navbar ul li a:hover {
+  color: #ff9900; /* hover color */
+}
+
+/* Active route link */
+#navbar ul li a.active-link {
+  color: #ff3333;   /* active link color */
+  font-weight: 600; /* makes it stand out */
+  border-bottom: 2px solid #ff3333; /* optional underline */
+}

@@ -1,0 +1,53 @@
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d1d7;
+  opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.gallery .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery .swiper-slide-active {
+    border: 6px solid var(--color-primary);
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.2);
+  }
+}
+#gallery  {
+  padding: 100px 0; /* space above & below */
+  position: relative;
+  z-index: 1; /* keeps it above footer */
+}
+
+/* Make section header centered & spaced */
+#gallery .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Fix overlap when header is fixed */
+header.fixed-top + main #gallery {
+  margin-top: 100px;
+}
