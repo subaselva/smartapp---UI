@@ -12,7 +12,7 @@ This README includes step-by-step screenshots for the booking flow.
 ## Demo screenshots
 > Place screenshots in `docs/images/` and commit them to repo. Example filenames used below.
 
-![1 - Table booking page]![2 - Filter restaurant & branch]![3 - Branch time slots]
+##[1 - Table booking page]##[2 - Filter restaurant & branch]##[3 - Branch time slots]
 <img width="1897" height="874" alt="Screenshot 2025-09-18 112529" src="https://github.com/user-attachments/assets/4c4b3886-7b68-4c4a-9e47-696853685d45" />
 (docs/images/03-branch-timeslots.png)  
 ![4 - Time slot -> dining tables]
